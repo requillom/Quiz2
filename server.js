@@ -22,7 +22,7 @@ const quizSchema = new mongoose.Schema({
     })
 
     QuizModel.insertMany([quiz]);
-    res.send('<h2>Quiz Added</h2>');
+    res.send(quiz);
 })
 
 app.listen(port, () => {
